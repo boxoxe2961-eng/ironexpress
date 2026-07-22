@@ -1,6 +1,0 @@
-{
-  "name": "IRONEXPRESS",
-  "description": "პრემიუმ კლასის საკურიერო და სატრანსპორტო მომსახურება საქართველოს მასშტაბით - სრული დაზღვევითა და სწრაფი მიწოდებით.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
