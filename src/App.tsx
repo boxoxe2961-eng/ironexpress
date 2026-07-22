@@ -572,7 +572,6 @@ export default function App() {
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pt-16">
                       <div className="flex items-center justify-between">
                         <div>
-                          <span className="text-[#C41E24] text-[10px] font-black tracking-widest uppercase block mb-1">საქალაქთაშორისო რეისები</span>
                           <h4 className="text-2xl font-black text-white uppercase tracking-tight">01 / მარშუტკით</h4>
                         </div>
                         <span className="w-10 h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-[#FFD700]">
@@ -597,7 +596,6 @@ export default function App() {
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pt-16">
                       <div className="flex items-center justify-between">
                         <div>
-                          <span className="text-[#FFD700] text-[10px] font-black tracking-widest uppercase block mb-1">კარამდე მიწოდება / ექსპრესი</span>
                           <h4 className="text-2xl font-black text-white uppercase tracking-tight">02 / მანქანით</h4>
                         </div>
                         <span className="w-10 h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-[#C41E24]">
