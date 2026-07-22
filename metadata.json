@@ -1,0 +1,6 @@
+{
+  "name": "GAATANE",
+  "description": "სასწრაფო და საიმედო საკურიერო მომსახურება - GAATANE. მიტანა მაქსიმუმ 4 დღეში მთელ საქართველოში.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
