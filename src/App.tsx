@@ -120,11 +120,11 @@ function SecureImage({
 
 function SecureLogo() {
   const [error, setError] = useState(false);
-  const logoUrl = "https://cdn.discordapp.com/attachments/1457400050148839616/1529525703891095826/content.png?ex=6a624151&is=6a60efd1&hm=9d3488d2133dc8b746f668276df6403c170a82a917cb28f8a81e7ad872a199e2&";
+  const logoUrl = "/logo.png";
 
   if (error) {
     return (
-      <div className="relative w-11 h-11 bg-[#C41E24] rounded-xl flex items-center justify-center text-white font-black shadow-[0_0_15px_rgba(196,30,36,0.5)] border border-white/10 transition-transform group-hover:scale-105">
+      <div className="relative w-12 h-12 bg-[#C41E24] rounded-full flex items-center justify-center text-white font-black shadow-[0_0_15px_rgba(196,30,36,0.5)] border border-white/10 transition-transform group-hover:scale-105">
         <Truck className="w-6 h-6 transform -skew-x-6" />
         <span className="absolute -bottom-1 -right-1 bg-[#FFD700] text-black text-[7px] px-1 font-extrabold rounded-xs uppercase tracking-tight">
           PRO
@@ -134,11 +134,11 @@ function SecureLogo() {
   }
 
   return (
-    <div className="relative w-14 h-14 sm:w-16 sm:h-16 bg-[#1A1A1A] rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(196,30,36,0.35)] border border-[#C41E24]/40 overflow-hidden transition-all duration-300 group-hover:border-[#C41E24] group-hover:scale-105 group-hover:shadow-[#C41E24]/40 shrink-0">
+    <div className="relative w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(196,30,36,0.35)] border-2 border-[#C41E24]/60 overflow-hidden transition-all duration-300 group-hover:border-[#C41E24] group-hover:scale-105 group-hover:shadow-[#C41E24]/50 shrink-0 p-0.5">
       <img 
         src={logoUrl} 
         alt="GAATANE" 
-        className="w-full h-full object-cover scale-125 transition-transform duration-300 group-hover:scale-135"
+        className="w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-105"
         onError={() => setError(true)}
         referrerPolicy="no-referrer"
       />
@@ -148,22 +148,22 @@ function SecureLogo() {
 
 function SecureFooterLogo() {
   const [error, setError] = useState(false);
-  const logoUrl = "https://cdn.discordapp.com/attachments/1457400050148839616/1529525703891095826/content.png?ex=6a624151&is=6a60efd1&hm=9d3488d2133dc8b746f668276df6403c170a82a917cb28f8a81e7ad872a199e2&";
+  const logoUrl = "/logo.png";
 
   if (error) {
     return (
-      <div className="w-12 h-12 rounded-xl bg-[#C41E24] flex items-center justify-center text-white font-black text-lg shadow-md">
+      <div className="w-12 h-12 rounded-full bg-[#C41E24] flex items-center justify-center text-white font-black text-lg shadow-md">
         G
       </div>
     );
   }
 
   return (
-    <div className="w-12 h-12 rounded-xl bg-[#161616] border border-[#C41E24]/40 overflow-hidden flex items-center justify-center shadow-lg shrink-0">
+    <div className="w-12 h-12 rounded-full bg-white border-2 border-[#C41E24]/60 overflow-hidden flex items-center justify-center shadow-lg shrink-0 p-0.5">
       <img 
         src={logoUrl} 
         alt="GAATANE" 
-        className="w-full h-full object-cover scale-125"
+        className="w-full h-full object-contain rounded-full"
         onError={() => setError(true)}
         referrerPolicy="no-referrer"
       />
@@ -562,7 +562,7 @@ export default function App() {
                 <div className="bg-[#121212] border border-white/10 hover:border-[#C41E24]/40 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group flex flex-col relative">
                   <div className="relative h-72 sm:h-96 w-full overflow-hidden bg-black/60 shrink-0">
                     <SecureImage 
-                      src="https://media.discordapp.net/attachments/1457400050148839616/1529523978333458531/content.png?ex=6a623fb5&is=6a60ee35&hm=773962012cabe806d23cb1328cff3aa62a520f972a7dfc6693836cdd21d9d80b&=&format=webp&quality=lossless&width=768&height=512"
+                      src="/marshutka.jpg"
                       alt="მიტანა მარშუტკით"
                       fallbackIcon={Truck}
                       className="w-full h-full"
@@ -586,7 +586,7 @@ export default function App() {
                 <div className="bg-[#121212] border border-white/10 hover:border-[#C41E24]/40 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 group flex flex-col relative">
                   <div className="relative h-72 sm:h-96 w-full overflow-hidden bg-black/60 shrink-0">
                     <SecureImage 
-                      src="https://media.discordapp.net/attachments/1457400050148839616/1529524319338758274/content.png?ex=6a624006&is=6a60ee86&hm=2f99905bc7e24717be0ce4efb34a5c8d38638461e7406ebceb0ff019f0328608&=&format=webp&quality=lossless&width=768&height=512"
+                      src="/car.jpg"
                       alt="მიტანა მანქანით"
                       fallbackIcon={Navigation}
                       className="w-full h-full"
